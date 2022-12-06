@@ -1,92 +1,144 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.main-container {
+    background-image: url('https://res.cloudinary.com/dgurkbuce/image/upload/v1670317664/Picsart_22-12-06_13-48-44-240_zijyai.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+.textcontent-2 {
+    font-family: "Caveat";
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    text-shadow: 1px 1px red;
+
+}
+
+.harshu {
+    color: #00a2ff;
+    font-size: 26px;
+    font-family: "Caveat";
+    padding-top: 5px;
+    text-shadow: 1px 1px black;
+
+
+}
+
+* {
     padding: 0;
     margin: 0;
 }
-.head
-{
-    display: flex;
-    justify-content: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-    margin-top: 20px;
-    text-align: center;
-}
-#emoji{
+
+
+#emoji {
     font-size: 30px;
 }
-.container{
+
+.container {
     display: flex;
     justify-content: center;
-    margin-top: 10vh;
 }
-#main{
-    background-color: aqua;
-    padding: 30px;
-    border-radius: 10px;
-}
-#main tr th,td{
-    background-image: linear-gradient(rgb(183, 226, 231),#fff);
+
+#main tr th,
+td {
+    background-color: transparent;
     border: 2px solid black;
     border-radius: 5px;
-    padding: 20px;
+    padding: 15px;
+    padding-top: none;
+    border-color: #ffb300;
+    color: white;
+
 }
-#main th{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 35px;
+
+#main th {
+    font-family: "Caveat";
+    font-size: 24px;
     text-align: center;
 }
-#main td{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 50px;
+
+#main td {
+    font-family: "Caveat";
+    font-size: 24px;
     text-align: center;
 }
-.textcontent{
+
+
+.audioplayauto {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.textcontent {
     display: flex;
     justify-content: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Roboto";
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 80%;
     text-align: center;
-}
-#btn{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    text-align: center;
-}
-#btn button{
-    
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 30px;
-    margin-top: 20px;
-    text-align: center;
-    background-color: aqua;
-    border: 2px solid black;
-    border-radius: 8px;
+    color: white;
+    padding-bottom: 5px;
 }
 
-@media only screen and (max-width: 500px)
 
-{
-    #main{
-        background-color: rgb(241, 20, 205);
+
+@media only screen and (max-width: 500px) {
+    #main {
+        background-color: transparent;
         padding: 30px;
         border-radius: 10px;
     }
-    #main th{
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 15px;
+
+    #main tr th,
+    td {
+        background: rgba(00, 00, 00, 0.3);
+        border: 2px solid black;
+        border-radius: 5px;
+        margin: 20px;
+        border-color: #ffb300;
+    }
+
+    #main th {
+        font-family: "Caveat";
+        font-size: 24px;
+        text-align: center;
+        margin: 10px;
+        margin-top: none;
+        border-color: #ffb300;
+
+    }
+
+    .text-center {
         text-align: center;
     }
-    #main td{
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 18px;
+
+    #main td {
+        font-family: "Caveat";
+        font-size: 24px;
         text-align: center;
+        margin: 10px;
+        margin-top: none;
+        border-radius: 10px;
+        border-color: #ffb300;
     }
-    #btn button{
-    
-    
-        background-color:rgb(241, 20, 205);
-        
+
+    #btn button {
+        height: 40px;
+        width: 140px;
+        border-color: orange;
+        border-width: 2px;
+        border-style: solid;
+        background-color: transparent;
+        color: white;
+        border-radius: 16px;
+        font-size: 22px;
+        font-family: "Caveat";
+        font-weight: bold;
+
+
     }
+
 }

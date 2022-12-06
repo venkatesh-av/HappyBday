@@ -64,7 +64,7 @@ if (a1.toLocaleDateString() !== fixedDate && currentdate <= d1) {
         if (dt == fixedDate) {
             bn.style.background = "green"
             bn.addEventListener("click", function() {
-                window.open("https://venkatesh-av.githu.io/bdaysite/")
+                window.open("brdypage.ccbp.tech")
             })
             clearInterval(clr)
         }
@@ -75,6 +75,6 @@ if (a1.toLocaleDateString() !== fixedDate && currentdate <= d1) {
     bn.style.background = "green"
     bn.addEventListener("click", function() {
         audio.play();
-        window.open("https://venkatesh-av.githu.io/bdaysite/");
+        window.open("brdypage.ccbp.tech");
     })
 }

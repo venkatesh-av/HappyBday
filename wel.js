@@ -19,7 +19,6 @@ var audio = document.createElement("audio");
 audio.src = "https://res.cloudinary.com/dgurkbuce/video/upload/v1670304950/Happy-Birthday_d48p8g.mp3";
 
 // set the volume of the audio file
-audio.volume = 0.5; // this sets the volume to 50
 
 var d1 = 6;
 var h1 = 11;

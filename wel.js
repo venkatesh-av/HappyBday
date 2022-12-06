@@ -3,22 +3,36 @@ let HH = document.getElementById("HH")
 let MM = document.getElementById("MM")
 let SS = document.getElementById("SS")
 let bn = document.getElementById("btn1")
-fixedDate = "12/21/2022";
 
+fixedDate = "12/7/2022";
 let a1 = new Date();
-let music = new Audio("audio/audo1.mp3")
-var d1 = 20;
-var h1 = 12;
+
+// function musicplay() {
+//     let music = new Audio("https://res.cloudinary.com/dgurkbuce/video/upload/v1670304950/Happy-Birthday_d48p8g.mp3");
+//     music.play();
+// }
+// musicplay();
+// create an audio element and assign it to a variable
+var audio = document.createElement("audio");
+
+// set the source of the audio file
+audio.src = "https://res.cloudinary.com/dgurkbuce/video/upload/v1670304950/Happy-Birthday_d48p8g.mp3";
+
+// set the volume of the audio file
+audio.volume = 0.5; // this sets the volume to 50
+
+var d1 = 6;
+var h1 = 11;
 var m1 = 00;
-var s1 = 0;
+var s1 = 1;
 let currentdate = a1.getDate();
 let currenthr = a1.getHours();
 console.log(currentdate + " : " + currenthr)
 console.log(currentdate < d1 && currenthr <= 23)
 console.log(currentdate < d1)
 console.log(currenthr <= 23)
-if (a1.toLocaleDateString()!=fixedDate && currentdate<=d1) {
-    clr = setInterval(function () {
+if (a1.toLocaleDateString() !== fixedDate && currentdate <= d1) {
+    clr = setInterval(function() {
         let a = new Date();
         let d = a.getDate();
         let h = a.getHours();
@@ -50,20 +64,18 @@ if (a1.toLocaleDateString()!=fixedDate && currentdate<=d1) {
 
         if (dt == fixedDate) {
             bn.style.background = "green"
-            bn.addEventListener("click", function () {
-                music.play()
-                window.open("https://youtu.be/XcpNJHZAiuM")
+            bn.addEventListener("click", function() {
+                window.open("https://hsecondpage.ccbp.tech/")
             })
             clearInterval(clr)
         }
 
     }, 1000)
-}
-else {
+} else {
     console.log("executing this...")
     bn.style.background = "green"
-    bn.addEventListener("click", function () {
-        music.play()
-        window.open("https://youtu.be/XcpNJHZAiuM")
+    bn.addEventListener("click", function() {
+        audio.play();
+        window.open("https://hsecondpage.ccbp.tech/");
     })
 }

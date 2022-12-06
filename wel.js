@@ -4,7 +4,7 @@ let MM = document.getElementById("MM")
 let SS = document.getElementById("SS")
 let bn = document.getElementById("btn1")
 
-fixedDate = "12/7/2022";
+fixedDate = "12/6/2022";
 let a1 = new Date();
 
 // function musicplay() {
@@ -21,7 +21,7 @@ audio.src = "https://res.cloudinary.com/dgurkbuce/video/upload/v1670304950/Happy
 // set the volume of the audio file
 audio.volume = 0.5; // this sets the volume to 50
 
-var d1 = 6;
+var d1 = 5;
 var h1 = 11;
 var m1 = 00;
 var s1 = 1;
